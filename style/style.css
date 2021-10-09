@@ -1,12 +1,11 @@
 body{
-    background-color: #e0e0e0;
+    background-color: #e5e5e5;
+    padding: 0px 60px;
 }
 /*--Barra de navegacion--*/
 .nav {
     background-color: black;
     opacity: 0.8;
-    margin-left: 50px;
-    margin-right: 50px;
     height: 40px;
 }
 .barra_menu{
@@ -27,7 +26,7 @@ a {
     display: flex;
     align-items: center;
 }
-#image{
+#image_1{
     margin-left: 49%;
     width: 400px;
     height: auto;
@@ -39,4 +38,12 @@ a {
 .barra_menu li{
     margin: 0px 0px 0px 20px;
 }
-/*Cuerpo index*/
+/*--Cuerpo index--*/
+.contenedor{
+    display: flex;
+}
+.contenedor #image_2{
+    width: auto;
+    height: 400px;
+    margin-right: 20px;
+}
