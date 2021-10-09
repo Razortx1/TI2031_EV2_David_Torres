@@ -39,10 +39,10 @@ a {
     margin: 0px 0px 0px 20px;
 }
 /*--Cuerpo index--*/
-.contenedor{
+.contenedor_index{
     display: flex;
 }
-.contenedor #image_2{
+.contenedor_index #image_2{
     width: auto;
     height: 400px;
     margin-right: 20px;
@@ -63,4 +63,9 @@ a {
 }
 #btn_reset{
     margin-right: 10px;
+}
+/*--Cuerpo Capturas--*/
+#contenedor_capturas .image{
+    width: 400px;
+    height: auto;
 }
