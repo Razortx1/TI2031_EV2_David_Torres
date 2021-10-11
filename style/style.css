@@ -64,3 +64,8 @@ a {
 #btn_reset{
     margin-right: 10px;
 }
+/*--Cuerpo Capturas--*/
+#contenedor_capturas .image{
+    width: 400px;
+    height: auto;
+}
