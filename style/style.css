@@ -47,3 +47,20 @@ a {
     height: 400px;
     margin-right: 20px;
 }
+/*--Cuerpo reportes--*/
+.contenedor_report{
+    margin: 0px 20%;
+}
+.contenedor_report #formulario{
+    border: solid black 1px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.contenedor_report .btn_for{
+    border: solid black 1px;
+    display: flex;
+    justify-content: center;
+}
+#btn_reset{
+    margin-right: 10px;
+}
