@@ -1,0 +1,49 @@
+body{
+    background-color: #e5e5e5;
+    padding: 0px 60px;
+}
+/*--Barra de navegacion--*/
+.nav {
+    background-color: black;
+    opacity: 0.8;
+    height: 40px;
+}
+.barra_menu{
+    display: flex;
+
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.barra_menu {
+    list-style: none;
+    color: white;
+}
+.logo_empresa{
+    width: 1000px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+#image_1{
+    margin-left: 49%;
+    width: 400px;
+    height: auto;
+}
+.barra_menu #menu_titulo{
+    margin: 0px;
+    padding: 0px;
+}
+.barra_menu li{
+    margin: 0px 0px 0px 20px;
+}
+/*--Cuerpo index--*/
+.contenedor_index{
+    display: flex;
+}
+.contenedor_index #image_2{
+    width: auto;
+    height: 400px;
+    margin-right: 20px;
+}
