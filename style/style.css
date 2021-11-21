@@ -38,6 +38,11 @@ a {
 .barra_menu li{
     margin: 0px 0px 0px 20px;
 }
+#boton{
+    position: absolute;
+    right: 60px;
+    top: 201px;
+}
 /*--Cuerpo index--*/
 .contenedor_index{
     display: flex;
@@ -68,4 +73,10 @@ a {
 #contenedor_capturas .image{
     width: 400px;
     height: auto;
+}
+/*Para modo oscuro*/
+.body.dark{
+    background-color: rgb(58, 55, 55);
+    padding: 0px 60px;
+    color: white;
 }
