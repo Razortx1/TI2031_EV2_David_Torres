@@ -10,6 +10,7 @@
     <title>Formulario</title>
 </head>
 <body class="body">
+    <button id="hola" onclick="validarcontra()">CLICK ME!!</button>
     <div class="logo_empresa">
         <img src="images/logo-teknicos.jpg" id="image_1">
     </div>
@@ -37,31 +38,32 @@
     </div>
     <div class="contenedor_report dark">
         <div class="row align-items-center" id="formulario">
-            <form action="" method="post">
+            <form action="" method="post" class="need-validation">
                 <h4>Formulario</h4>
                 <div>
                     <label for="rut" class="form-label">Rut:</label><br>
-                    <input type="text" class="form-control" id="rut"><br>
+                    <input type="text" class="form-control" id="rut" required autofocus value="21178762-7"><br>
                 </div>
                 <div>
                     <label for="name" class="form-label">Nombre:</label><br>
-                    <input type="text"id="name" class="form-control">
+                    <input type="text"id="name" class="form-control" required>
                 </div>
                 <div>
                     <label for="last_name" class="form-label">Apellido:</label><br>
-                    <input type="text"id="last_name" class="form-control">
+                    <input type="text"id="last_name" class="form-control" required>
                 </div>
                 <div>
                     <label for="email" class="form-label">Correo electronico:</label>
-                    <input type="email"id="email" class="form-control" placeholder="example@example.com">
+                    <input type="email"id="email" class="form-control" placeholder="example@example.com" required>
                 </div>
                 <div>
                     <label for="pass" class="form-label">Contraseña:</label><br>
-                    <input type="password" name="contraseña" class="form-control" id="pass">
+                    <input type="password" name="contraseña" class="form-control" id="pass" pattern="[a-Za-z0-9]" maxlength="12" minlength="6" title="Debe contener Mayusculas y Minusculas, un numero y los caracteres deben ser entre 8 y 12" required>
                 </div>
                 <div>
                     <label for=" reppass" class="form-label">Repetir Contraseña:</label><br>
-                    <input type="password" name="contraseña" class="form-control" id="reppass">
+                    <input type="password" name="contraseña" class="form-control" id="repass" pattern="[a-Za-z0-9]" maxlength="12" minlength="6"required>
+                    <div id="warning" style="color: red;"></div>
                 </div>
             </form>
         </div>
