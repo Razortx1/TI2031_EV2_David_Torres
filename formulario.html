@@ -10,7 +10,6 @@
     <title>Formulario</title>
 </head>
 <body class="body">
-    <button id="hola" onclick="validarcontra()">CLICK ME!!</button>
     <div class="logo_empresa">
         <img src="images/logo-teknicos.jpg" id="image_1">
     </div>
@@ -42,19 +41,23 @@
                 <h4>Formulario</h4>
                 <div>
                     <label for="rut" class="form-label">Rut:</label><br>
-                    <input type="text" class="form-control" id="rut" required autofocus value="21178762-7"><br>
+                    <input type="text" class="form-control" id="rut" title="El guion debe ser con guion y sin puntos" required"><br>
+                    <div id="rutval" style="color: red;"></div>
                 </div>
                 <div>
                     <label for="name" class="form-label">Nombre:</label><br>
                     <input type="text"id="name" class="form-control" required>
+                    <div id="nameval" style="color: red;"></div>
                 </div>
                 <div>
                     <label for="last_name" class="form-label">Apellido:</label><br>
                     <input type="text"id="last_name" class="form-control" required>
+                    <div id="lastnameval" style="color: red;"></div>
                 </div>
                 <div>
                     <label for="email" class="form-label">Correo electronico:</label>
                     <input type="email"id="email" class="form-control" placeholder="example@example.com" required>
+                    <div id="mailval" style="color: red;"></div>
                 </div>
                 <div>
                     <label for="pass" class="form-label">Contraseña:</label><br>
@@ -69,7 +72,7 @@
         </div>
         <div class="btn_for">
             <input type="reset" value="Reiniciar Form" class="btn btn-danger" id="btn_reset">
-            <input type="submit" value="Enviar" class="btn btn-success" id="btn_submit">
+            <input type="submit" value="Enviar" onclick="llamar()" class="btn btn-success" id="btn_submit">
         </div>
     </div>
 </body>
