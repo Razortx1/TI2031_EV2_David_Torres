@@ -135,6 +135,8 @@ function llamar(){
         console.log(apellido);
         console.log(mail);
         console.log(contraseña)
+        let usuario = { Rut: rut, Nombre : nombre, Apellido: apellido, Correo: mail, Contraseñas: contraseña};
+        console.log(usuario)
         alert("El Formulario fue enviado exitosamente")
     }
     else{
